@@ -1,0 +1,26 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+
+.env
+.venv/
+venv/
+env/
+
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+
+instance/
+*.db
+.webassets-cache
+
+data/raw/*.csv
+!data/raw/.gitkeep
+# NOTE: app/ml/artifacts/ (model.pkl, pipeline.pkl, calibrator.pkl, metadata.json) IS committed on purpose, so a
+# fresh clone / Docker image can score customers immediately. `flask train` overwrites them.
+
+.DS_Store
+*.log
